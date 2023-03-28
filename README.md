@@ -60,23 +60,24 @@ To create new User: PROJECT_IT_SCHEMA - you need to download it from [here]
 Next step is to open SQL Developer and do the following steps:
 1. To create new user use the code below in Schema - system: 
 
-![FirstImage]
+![1](https://user-images.githubusercontent.com/125867556/228336880-659cd466-d348-45f3-9168-e1fb033c1e31.PNG)
+
 
 2. Next step is  adding New Connection and fill the necessary information:
 UserName: PROJECT_IT_SCHEMA
 Password: password123
 *Important to be connected to container: XEPDB1
 
-![SecontImage]
+![2](https://user-images.githubusercontent.com/125867556/228336923-e618f6c6-9715-4a4d-876b-0e77d5a106ec.PNG)
+
 
 3. Last step is to copy attached sript: "PROJECT_IT_SCHEMA", paste it in Worksheet of your created user and Run this sript. 
 
-![ThirdImage]
+![3](https://user-images.githubusercontent.com/125867556/228336972-61cf992e-62ae-499b-868d-8146426f6151.PNG)
 
 4. After it you will have ready environment to get my attached scripts and test it.
 
-![FiveImaage]
-
+![4](https://user-images.githubusercontent.com/125867556/228337035-da0dee9c-6898-426f-8dda-031e52e2d0b4.PNG)
 
 #### 
 
