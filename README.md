@@ -76,7 +76,6 @@ Password: password123
 
 #### Project development
 
-To present how it works I will show simple exemplary task:
 
 1. First step is to develop a conceptual model of business processes on which the operation of our portal is to be based. Here is one of the UML diagram witch is used to understand process in our DB.
 
