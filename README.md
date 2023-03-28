@@ -9,7 +9,6 @@
 4. BUSSINES LOGIC AND SUPPORT MECHANISMS (SQL DEVELOPER using PL/SQL)
 
 
-
 ## Table of Contents 
 1. About
 2. Tools
@@ -19,7 +18,7 @@
 
 #### About
 
-In my repository I would like to present the progress of my development in the field of databases. This project 
+In my repository I would like to present all process of creating a DataBase and business logic necessary for the operation of the recruitment portal. The project is created from scratch, through all the steps.
 
 
 #### Tools 
@@ -29,6 +28,7 @@ In my repository I would like to present the progress of my development in the f
 * `Data Modeler 21.2.0.183`
 * `SQL Developer Version 22.2.1.234`
 * `Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production`
+
 
 #### Prerequisites
 
