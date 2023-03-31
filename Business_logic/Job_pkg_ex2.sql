@@ -1,3 +1,4 @@
+
 /*• Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
 8 days of the order.*/
 
@@ -78,3 +79,4 @@ comments        =>  'TEST JOB'
 );
 END;
 /
+
