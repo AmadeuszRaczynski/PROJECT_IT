@@ -1,7 +1,5 @@
-
 /*• Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
 8 days of the order.*/
-
 
 -- PACKAGE 
 CREATE OR REPLACE PACKAGE validation_pkg
@@ -67,7 +65,6 @@ END;
 /
 
 
-
 -- JOB 
 BEGIN
 DBMS_SCHEDULER.create_job (
@@ -79,4 +76,3 @@ comments        =>  'TEST JOB'
 );
 END;
 /
-
