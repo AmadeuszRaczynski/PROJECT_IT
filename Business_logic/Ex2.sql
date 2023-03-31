@@ -1,16 +1,16 @@
--- language=plsql
+
 
 /*Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
 8 days of the order.*/
 
--- PACKAGE 
+
 CREATE OR REPLACE PACKAGE validation_pkg
 IS
 PROCEDURE p_validator;
 END validation_pkg;
 /
 
--- PACKAGE BODY
+
 
 CREATE OR REPLACE PACKAGE BODY validation_pkg
 IS
@@ -42,7 +42,7 @@ END validation_pkg;
 
 
 
---JOB program
+
 BEGIN
 DBMS_SCHEDULER.create_program (
 program_name     => 'automat_validate_orders' ,
@@ -54,7 +54,7 @@ comments         => 'Order validator'
 END;
 /
 
--- JOB schedule
+
 BEGIN
 DBMS_SCHEDULER.create_schedule (
 schedule_name    => 'Weekly_harmonogram',
@@ -67,7 +67,7 @@ END;
 /
 
 
--- JOB 
+
 BEGIN
 DBMS_SCHEDULER.create_job (
 job_name        =>  'orders_validator',
