@@ -1,5 +1,5 @@
-<script type="text/plsql">
-/*• Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
+
+/*Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
 8 days of the order.*/
 
 -- PACKAGE 
@@ -77,5 +77,4 @@ comments        =>  'TEST JOB'
 );
 END;
 /
-</script>
 
