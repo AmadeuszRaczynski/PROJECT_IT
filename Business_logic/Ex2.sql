@@ -1,4 +1,5 @@
-/*• Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
+
+/*Mechanism of automatically marking orders as inactive in the absence of accepted payment within 
 8 days of the order.*/
 
 -- PACKAGE 
@@ -76,3 +77,17 @@ comments        =>  'TEST JOB'
 );
 END;
 /
+
+
+
+BEGIN
+DBMS_SCHEDULER.create_job (
+job_name        =>  'orders_validator',
+program_name    =>  'automat_validate_orders',
+schedule_name   =>  'Weekly_harmonogram',
+enabled         =>  TRUE,
+comments        =>  'TEST JOB'
+);
+END;
+/
+
