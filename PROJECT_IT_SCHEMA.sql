@@ -647,3 +647,21 @@ Insert into SUBSCRIPTIONS (SUBSCRIPTION_ID,ORDER_DATE,APPLICANT_ID,PRODUCT_ID,ST
 	  REFERENCES "APPLICANTS" ("APPLICANT_ID") ENABLE;
   ALTER TABLE "SUBSCRIPTIONS" ADD CONSTRAINT "SUBS_PRODUCTS_FK" FOREIGN KEY ("PRODUCT_ID")
 	  REFERENCES "PRODUCTS" ("PRODUCT_ID") ENABLE;
+	  
+--------------------------------------------------------
+--  Modification on 01.04.2023
+--------------------------------------------------------
+ALTER TABLE subscriptions ADD  expiration_date DATE;
+
+UPDATE subscriptions SET expiration_date = order_date + 30
+WHERE product_id = 1;
+
+UPDATE subscriptions SET expiration_date = order_date + 90
+WHERE product_id = 2;
+
+UPDATE subscriptions SET expiration_date = order_date + 180
+WHERE product_id = 3;
+
+
+UPDATE subscriptions SET STATUS = 'EXPIRED'
+WHERE expiration_date < SYSDATE;
